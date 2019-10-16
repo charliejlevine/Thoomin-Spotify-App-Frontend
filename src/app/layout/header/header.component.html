@@ -1,0 +1,24 @@
+<div class="row header">
+  <div class="px-3 menu-item">
+    Thoomin Spotify App
+  </div>
+  <div
+    class="ml-auto px-3 menu-item dropdown"
+    placement="bottom"
+    #userPopover="ngbPopover"
+    [ngbPopover]="accountPop"
+    [autoClose]="'outside'"
+  >
+    Select a Playlist <span class="fa fa-chevron-down pl-2"></span>
+  </div>
+  <div class="px-3 menu-item">
+    <button class="btn btn-danger">Logout</button>
+  </div>
+</div>
+
+<ng-template #accountPop>
+  <ul>
+    <li>Playlist 1</li>
+    <li>Playlist 2</li>
+  </ul>
+</ng-template>
